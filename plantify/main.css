@@ -61,7 +61,7 @@ footer {
 
 /*Front Page*/
 .body-backg {
-    width: 70%;
+    width: 60%;
     margin: auto;
     background-color: rgba(255, 255, 255,0.6);
     box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.8);
@@ -75,7 +75,7 @@ footer {
     margin: 1%;
 }
 
-/*Theme Page*/
+/*Plant Theme*/
 .page-navi h3 {
     padding-left: 8%;
     color: rgb(250, 235, 215);
@@ -118,13 +118,13 @@ footer {
     height: 150px;
 }
 
-/*Pricing Page*/
+/*Pricing*/
 table {
     border-spacing: 2rem;
     background-color: rgba(255, 255, 255,0.6);
     box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.8);
-    margin: 2% 10%;
-    width: 80%;
+    margin: 2% 20%;
+    width: 60%;
 }
 
 th, td {
@@ -138,6 +138,11 @@ th {
 
 td {
     border-bottom: 0.1rem dotted rgb(156, 98, 28);
+}
+
+/*About Us*/
+.body-backg p {
+    padding: 3rem;
 }
 
 /*Contact*/
@@ -170,21 +175,37 @@ label {
     font-size: 1rem;
     padding: 0 12px 0 0;
     margin: 0 0 0 5%;
+    position: static;
+}
+
+.inquiry {
+    position: relative;
+    bottom: 3rem;
 }
 
 input[type="radio"] {
     margin: 0;
 }
 
-.text-box{
-    display: block;
+.text-box {
+    display: inline-block;
     position: relative;
-    left: 14.7%;
-    top: -1.25rem;
+    left: 1.6rem;
+    top: 1rem;
 }
 
-.name input{
+.name input {
     display: inline-block;
+}
+
+input[type="tel"] {
+    position: relative;
+    left: 0.2rem;
+}
+
+input[type="email"] {
+    position: relative;
+    left: 1.8rem;
 }
 
 textarea {
@@ -195,5 +216,6 @@ textarea {
 input[type="submit"] {
     width: 10%;
     position: relative;
-    left: 50%;
+    left: 7rem;
+    margin: 3% 0;
 }
