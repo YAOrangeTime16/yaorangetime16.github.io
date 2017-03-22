@@ -1,0 +1,223 @@
+html, body {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 62.5%;
+  color: white;
+  background-color: #252525; }
+
+h1 {
+  font-weight: 400;
+  font-size: 2.8rem; }
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 300; }
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 100; }
+
+.line-h {
+  line-height: 27rem; }
+
+@media screen and (max-width: 960px) {
+  .line-h {
+    line-height: 27rem; } }
+.font_dark {
+  color: #252525; }
+
+ul {
+  font-size: 2.2rem; }
+
+li {
+  list-style: none; }
+
+.bg-image {
+  width: 100%;
+  height: 66rem;
+  background-image: url(../images/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.menu {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 8rem; }
+
+@media screen and (max-width: 960px) {
+  .menu {
+    display: none; } }
+.menu_list {
+  list-style: none; }
+
+.linkmenu {
+  display: block;
+  width: 95%;
+  padding: 2rem 1rem 0.5rem 0.5rem;
+  margin: 0;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 200; }
+
+.menu_list:after {
+  content: "";
+  display: block;
+  width: 0;
+  transition: width 0.7s;
+  /* border or (height & background) etc. */
+  border-bottom: 1px solid white;
+  /* margin: 0 auto; */
+  /* left to right -> middle out */ }
+
+.menu_list:hover:after {
+  width: 150%; }
+
+.fullpage {
+  height: 100%; }
+
+.box {
+  margin: 30rem 0.5rem;
+  width: 100;
+  height: 30rem;
+  background-color: #3c3c3c;
+  text-align: center; }
+
+.hidden {
+  display: none; }
+
+.like_divs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center; }
+
+.mainBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+#body_txt {
+  width: 100%;
+  height: 200%; }
+
+#about {
+  background-image: url(../images/who_075x.jpg);
+  background-position: center;
+  background-repeat: no-repeat; }
+
+#aboutContent {
+  position: relative;
+  top: -80rem;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 200;
+  height: auto;
+  padding-left: 20rem;
+  background-color: rgba(178, 148, 148, 0.9);
+  border-radius: 3%; }
+  #aboutContent h1 {
+    text-decoration: underline; }
+  #aboutContent li {
+    list-style: circle;
+    font-size: 1.8rem;
+    line-height: 2.7rem; }
+  #aboutContent p {
+    font-size: 1.8rem; }
+
+@media screen and (max-width: 960px) {
+  .mainBody {
+    margin: 0; }
+
+  .box {
+    margin: 1rem auto;
+    width: 99%;
+    height: 25rem; }
+
+  #about {
+    position: relative; }
+
+  #aboutContent {
+    width: 90%;
+    top: 0;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: row; } }
+.mover {
+  width: 17rem;
+  height: 17rem;
+  border-radius: 25%;
+  overflow: hidden;
+  position: relative;
+  margin: 1rem;
+  z-index: 3; }
+
+.bg_op {
+  position: relative;
+  width: 17rem;
+  height: 17rem;
+  background-color: rgba(22, 129, 168, 0.6);
+  transition: .3s;
+  opacity: 0;
+  z-index: 2; }
+  .bg_op p {
+    display: inline-block;
+    margin-top: 7rem;
+    z-index: 1; }
+
+.bg_op:hover, .bg_op:active {
+  opacity: 1; }
+
+@media screen and (max-width: 960px) {
+  .mover, .bg_op {
+    width: 20rem;
+    height: 20rem; } }
+#chrochet {
+  background-image: url("../images/ch.jpg");
+  background-position: bottom; }
+
+#ski {
+  background-image: url("../images/hiking.jpg");
+  background-position: top; }
+
+#cv h1 {
+  margin-top: 12rem; }
+
+#cvContent {
+  width: 66.66%;
+  height: auto;
+  text-align: left;
+  padding-left: 3rem; }
+
+.cv_container {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  font-family: "Open Sans Condensed", sans-serif; }
+  .cv_container li {
+    font-size: 2.2rem;
+    line-height: 3.6rem; }
+  .cv_container .edu {
+    font-size: 1.8rem; }
+
+#work {
+  background-image: url(../images/pc_075x.jpg);
+  background-position: center;
+  background-repeat: no-repeat; }
+
+@media screen and (max-width: 960px) {
+  #work {
+    position: relative; } }
+/*SVG modification*/
+.mySvg {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 17rem; }
+
+/*# sourceMappingURL=main.css.map */
