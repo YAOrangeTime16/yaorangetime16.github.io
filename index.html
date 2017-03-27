@@ -4,8 +4,8 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio: Yoko Andrae</title>
-    <link rel="stylesheet" href="src/css/normalize.css">
-    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
     <!--Import Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <!--Let browser know website is optimized for mobile-->
@@ -24,32 +24,35 @@
     <nav>
         <ul class="menu">
             <li class="menu_list"><a class="linkmenu" href="#top">TOP</a></li>
-            <li id="aboutMe" class="menu_list"><a class="linkmenu" href="#about">ABOUT ME</a></li>
-            <li class="menu_list"><a class="linkmenu" href="#cv">BACKGROUND</a></li>
-            <li class="menu_list"><a class="linkmenu" href="#work">SCHOOL PROJECTS</a></li>
+            <li id="aboutMe" class="menu_list"><a class="linkmenu about" href="#about">ABOUT ME</a></li>
+            <li class="menu_list"><a class="linkmenu cv" href="#cv">BACKGROUND</a></li>
+            <li class="menu_list"><a class="linkmenu work" href="#work">SCHOOL PROJECTS</a></li>
         </ul>
     </nav>
     </header>
     <main>
-        <section class="fullpage">
+        <section>
+            <!------ ABOUT ME ------>
             <article class="box" id="about">
-                <h1 class="font_dark line-h">Who Am I?</h1>
+                <h1 class="h1_who">Who Am I?</h1>
+                <div id="popinAbout">
+                </div>
             </article>
-            <div id="aboutContent" class="box hidden"></div>
+            <!------ BACKGROUND ------>
             <article class="box" id="cv">
-                <h1>Background</h1>
-                <h3>Careers &amp; Educations</h3>
+                <h1 class="h1_cv">Careers &amp; Educations</h1>
+                <div id="popinCV"></div>
             </article>
-            <div id="cvContent" class="box hidden"></div>
+            <!------ SCHOOL PROJECTS ------>
             <article class="box" id="work">
                 <h1 class="font_dark line-h">School Projects</h1>
             </article>
         </section>
-        <div id="body_txt"></div>
+
     </main>
     <footer>
     </footer>
-    <script type="text/javascript" src="src/js/main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     
 </body>
     

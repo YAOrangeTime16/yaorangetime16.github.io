@@ -1,10 +1,14 @@
+@import 'mixin';
+
 $gray-dark: #252525;
+$gray-light: #574f4f;
 $side-margin: 0.5rem;
 $font-s: 1.6rem;
 $font-m: 1.8rem;
 $font-l: 2.2rem;
 $font-ll: 2.8rem;
 $font-xl: 3.6rem;
+$breakpoint-mobile: 680px;
 $osans-c: 'Open Sans Condensed', sans-serif;
 
 html, body {
@@ -12,6 +16,10 @@ html, body {
     font-size: 62.5%; 
     color: white;
     background-color: $gray-dark;
+}
+
+html, body, p {
+    margin: 0;
 }
 
 h1 {
@@ -30,12 +38,10 @@ h3 {
 
 .line-h {
     line-height: 27rem;
-}
-
-
-@media screen and (max-width: 960px){
-    .line-h {
-        line-height: 27rem;
+    @include max-screen($breakpoint-mobile){
+        .line-h {
+            line-height: 27rem;
+        }
     }
 }
 
@@ -69,7 +75,7 @@ li {
   bottom: 8rem; 
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: $breakpoint-mobile){
     .menu {
       display: none; }
 }
@@ -102,58 +108,32 @@ li {
   width: 150%;
 }
 
-.fullpage {
-  height: 100%;
-}
-
 .box {
-    margin: 30rem $side-margin;
-    width: 100;
-    height: 30rem;
-    background-color: #3c3c3c;
+    margin: 1rem $side-margin;
+    height: 100vh;
     text-align: center;
-}
-
-.hidden {
-    display: none;
-}
-
-.like_divs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-}
-
-.mainBody {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    vertical-align: middle;
+    justify-content: center;
 }
-
-#body_txt {
-    width: 100%;
-    height: 200%;
-}
-
-#about {
-    background-image: url(../images/who_075x.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#aboutContent {
+/*========
+   ABOUT
+ ========*/
+#popinAbout {
+    display:flex;
+    flex-direction: row;
     position:relative;
-    top: -80rem;
-    width: 80%;
+    width: 70%;
+    @include max-screen ($breakpoint-mobile){
+            width: 100%;
+    }
     margin: auto;
+    height: auto;
     text-align: left;
     font-family: $osans-c;
     font-weight: 200;
-    height: auto;
-    padding-left: 20rem;
-    background-color: rgba(178, 148, 148, 0.9);
-    border-radius: 3%;
+    
     h1 {
         text-decoration: underline;
     }
@@ -162,12 +142,27 @@ li {
         font-size: $font-m;
         line-height: 2.7rem;
     }
-    p {
-        font-size: $font-m;
+}
+.flex_row_left, .flex_row_right {
+    width: 50%;
+    background-color: rgba(178, 148, 148, 0.95);
+    @include max-screen ($breakpoint-mobile){
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 960px){
+.h1_who {
+    position:absolute;
+
+}
+
+.h1_cv {
+    position:absolute;
+}
+
+
+
+@media screen and (max-width: $breakpoint-mobile){
     .mainBody {
         margin: 0;
     }
@@ -177,92 +172,48 @@ li {
     height: 25rem;
     }
     
-    #about {
-        position:relative;
+    #popinAbout {
+        flex-direction: column;
     }
-    
-    #aboutContent {
-        width: 90%;
-        top: 0;
-        padding-left: 2rem;
-        display: flex;
-        flex-direction: row;
-    }
-}
-
-.mover {
-    width: 17rem;
-    height: 17rem;
-    border-radius: 25%;
-    overflow: hidden;
-    position: relative;
-    margin: 1rem;
-    z-index: 3;
-}
-
-.bg_op {
-    position: relative;
-    width: 17rem;
-    height: 17rem;
-    background-color: rgba(22, 129, 168, 0.6);
-    transition: .3s;
-	opacity: 0;
-    z-index: 2;
-    p{
-        display: inline-block;
-        margin-top: 7rem;
-        z-index: 1;
-    }
-}
-.bg_op:hover, .bg_op:active {
-    opacity: 1;
-}
-
-@media screen and (max-width: 960px){
-    .mover, .bg_op {
-        width: 20rem;
-        height: 20rem;
-    }
-}
-
-#chrochet {
-    background-image: url('../images/ch.jpg');
-    background-position: bottom;
-}
-
-#ski {
-    background-image: url('../images/hiking.jpg');
-    background-position: top;
 }
 
 // CAREERS AND EDUCATIONS
 
-#cv {
-    h1 {
-        margin-top: 12rem;
-    }
-}
-#cvContent {
-    width: 66.66%;
-    height: auto;
+#popinCV {
+    position:relative;
+    width: 70%;
+    @include max-screen ($breakpoint-mobile){
+            width: 100%;
+        }
     text-align: left;
-    padding-left: 3rem;
+    font-weight: 200;
+    margin: auto;
+    height: auto;
+        @include max-screen ($breakpoint-mobile){
+            padding: 0;
+        }
+    background-color: rgba(178, 148, 148, 0.95);
 }
 
-.cv_container {
+
+
+.li-flex{
     display: flex;
     flex-direction: row;
-    text-align: left;
-    font-family: $osans-c;
-    li {
-        font-size: $font-l;
-        line-height: 3.6rem;
-    }
-    .edu {
-        font-size: $font-m;
+        @include max-screen ($breakpoint-mobile){
+            display: inline-block;
+            flex-direction: column;
+            width: 100%;
+        }
+    .li-align{
+        position: absolute;
+        left: 23rem;
+        @include max-screen ($breakpoint-mobile){
+            display: block;
+            position: inherit;
+        }
     }
 }
-
 
 // PROJECTS AT SCHOOL
 
