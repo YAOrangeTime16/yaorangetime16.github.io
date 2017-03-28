@@ -1,0 +1,19 @@
+{
+  "name": "yaorangetime16.github.io",
+  "version": "1.0.0",
+  "description": "* Bus Fare  \r Code: https://github.com/YAOrangeTime16/busfare\r * To-do list  \r Code: https://github.com/YAOrangeTime16/todo\r * Foodie  \r Code: https://github.com/YAOrangeTime16/foodie",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YAOrangeTime16/yaorangetime16.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YAOrangeTime16/yaorangetime16.github.io/issues"
+  },
+  "homepage": "https://github.com/YAOrangeTime16/yaorangetime16.github.io#readme"
+}
