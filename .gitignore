@@ -1,3 +1,10 @@
 plantify/
 .sass-chache/
-.sass/
+sass/
+css/*.css.map
+bower_components/jquery/external/
+bower_components/jquery/src/
+bower_components/jquery/*.json
+bower_components/jquery/*.txt
+bower_components/jquery/*.md
+bower_components/jquery/dist/*.*.map
