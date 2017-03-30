@@ -1,5 +1,5 @@
-@mixin max-screen($breakpoint) {
-  @media screen and (max-width: $breakpoint) {
+@mixin min-screen($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
     @content;
   }
 }
