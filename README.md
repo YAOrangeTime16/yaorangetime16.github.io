@@ -1,5 +1,4 @@
-# Nackademin / Frontend 2016
-## Yoko Andrae
+# Nackademin / Front-end 2016 / Yoko Andrae
 
 ### Javascript 1
 * Bus Fare  
@@ -12,10 +11,10 @@ Code: https://github.com/YAOrangeTime16/foodie
 ### Javascript 2
 * Design Pattern (Movie Database)  
 Code: https://github.com/YAOrangeTime16/designpattern  
-Web page: https://yaorangetime16.github.io/designpattern/  
+Live: https://yaorangetime16.github.io/designpattern/  
 * AJAX / API (Web application)  
 Code: https://github.com/YAOrangeTime16/ajax  
-Web Page: https://yaorangetime16.github.io/ajax/  
+Live: https://yaorangetime16.github.io/ajax/  
 
 ### HTML / CSS
 * Plantify

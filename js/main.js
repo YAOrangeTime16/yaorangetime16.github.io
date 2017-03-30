@@ -1,6 +1,7 @@
 $(function(){
     let num=0;
     let numCV=0;
+    let numP=0;
      $('#about').on('click', function(){
 
         $(this).data('click', ++num);
@@ -27,15 +28,16 @@ $(function(){
             }
         
     });
-    /*
-    $('#about').on('click', function(){
-        $('#popinAbout').fadeToggle();
-        $('#popinAbout').load('about.html');
+    
+    $('#work').on('click', function(){
+        $(this).data('click', ++numP);
+         click=$(this).data('click');
+            if(click===1){
+                $('#popinWork').load('projects.html');
+                $('.h1_work').fadeToggle('fast');
+            }else{
+                $('#popinWork').fadeToggle();
+                $('.h1_work').fadeToggle('fast');
+            }
     });
-
-    $('#cv').on('click', function(){
-        $('#popinCV').fadeToggle();
-        $('#popinCV').load('background.html');
-    });
-    */
 });
