@@ -1,9 +1,12 @@
-html, body, main, section, article, div {
+html, body, main, section, article {
   font-family: "Open Sans Condensed", sans-serif;
   background-color: #252525;
-  margin: 0;
   width: 100%;
   height: auto; }
+
+div {
+  margin: 0;
+  padding: 0; }
 
 p {
   margin: 0; }
@@ -14,11 +17,10 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
-  font-weight: 300;
-  margin: 0; }
+  font-weight: 300; }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 100; }
 
 .line-h {
@@ -33,20 +35,29 @@ ul {
 li {
   list-style: none; }
 
+.text-centering {
+  text-align: center; }
+
+.bg-color-div {
+  background: #b29494; }
+
 .bg-image {
   width: 100%;
   height: 100vh;
   background-image: url(../images/main-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  position: relative;
+  z-index: 2; }
 
 .menu {
   width: 40%;
   display: flex;
   flex-direction: column;
   position: absolute;
-  bottom: 0rem; }
+  bottom: 0rem;
+  z-index: 3; }
 
 .menu_list {
   list-style: none; }
@@ -58,7 +69,7 @@ li {
   margin: 0;
   color: #ffffff;
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 200; }
 
 .menu_list:after {
@@ -82,6 +93,25 @@ li {
   vertical-align: middle;
   justify-content: center; }
 
+.arrow-top {
+  text-align: right;
+  z-index: 0; }
+  .arrow-top img {
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    cursor: pointer;
+    transform: scale(0.8); }
+  .arrow-top .page-top {
+    color: #b77b7b;
+    position: fixed;
+    bottom: 3rem;
+    right: 1.2rem;
+    z-index: 1;
+    text-shadow: 0 0 3px white; }
+    .arrow-top .page-top:hover {
+      display: inline; }
+
 /*========
    ABOUT
  ========*/
@@ -93,27 +123,35 @@ li {
   font-weight: 300; }
   @media screen and (min-width: 750px) {
     #popinAbout {
-      flex-direction: row;
       width: 90%;
       margin: 0.5rem auto; } }
   #popinAbout h1 {
-    text-decoration: underline;
     color: beige; }
   #popinAbout h2 {
     display: inline-block;
     color: beige; }
   #popinAbout li {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 2.7rem; }
+
+.about-desktop-layout {
+  display: flex;
+  flex-direction: column;
+  background-color: #b29494; }
+  @media screen and (min-width: 1000px) {
+    .about-desktop-layout {
+      flex-direction: row; } }
 
 .flex_row_left, .flex_row_right {
   padding: 1rem;
-  width: auto;
-  background-color: rgba(178, 148, 148, 0.95); }
+  background-color: #b29494; }
   @media screen and (min-width: 750px) {
     .flex_row_left, .flex_row_right {
-      width: 50%;
       padding: 2rem; } }
+  @media screen and (min-width: 1000px) {
+    .flex_row_left, .flex_row_right {
+      background-color: transparent;
+      width: 50%; } }
   .flex_row_left ul, .flex_row_right ul {
     margin-top: 1rem; }
 
@@ -134,18 +172,23 @@ li {
   font-weight: 200;
   margin: auto;
   height: auto;
-  background-color: rgba(178, 148, 148, 0.95); }
+  background-color: #b29494; }
   @media screen and (min-width: 1000px) {
     #popinCV {
       width: 90%;
       margin: 0.5rem auto; } }
   #popinCV h2 {
-    padding-left: 1rem;
-    text-decoration: underline; }
+    padding-left: 1rem; }
   #popinCV .edu {
     color: beige; }
   #popinCV .experience {
-    background-color: rgba(178, 148, 148, 0.95); }
+    background-color: #b29494; }
+
+.ul-cv {
+  padding-left: 1rem; }
+  @media screen and (min-width: 1000px) {
+    .ul-cv {
+      padding-left: 5rem; } }
 
 .li-flex {
   display: inline-flex;
@@ -160,7 +203,7 @@ li {
     display: block;
     position: inherit;
     margin-bottom: 1rem;
-    font-size: 1.6rem; }
+    font-size: 1.4rem; }
     @media screen and (min-width: 1000px) {
       .li-flex .li-align {
         position: absolute;
@@ -173,17 +216,47 @@ li {
         padding-left: 3rem; } }
 
 #popinWork {
-  background-color: rgba(178, 148, 148, 0.95); }
+  display: flex;
+  flex-direction: column;
+  background-color: #b29494; }
+  @media screen and (min-width: 750px) {
+    #popinWork {
+      width: 90%;
+      margin: 0.5rem auto; } }
   #popinWork .title {
     color: white;
     text-align: left;
-    margin-top: 1rem; }
-    @media screen and (min-width: 750px) {
-      #popinWork .title {
-        margin-left: 10rem; } }
+    padding-top: 1rem;
+    width: 100%; }
+    #popinWork .title h3 {
+      padding-left: 2rem; }
     #popinWork .title li {
-      list-style: circle;
+      padding-left: 1rem;
+      list-style: none;
+      color: #252525;
+      font-size: 1.4rem;
+      line-height: 2.4rem; }
+      #popinWork .title li li {
+        list-style: none; }
+        #popinWork .title li li:after {
+          content: "";
+          display: block;
+          width: 0;
+          transition: width 0.7s;
+          border-bottom: 3px solid rgba(245, 245, 220, 0.5); }
+        #popinWork .title li li:hover:after {
+          width: 80%; }
+    #popinWork .title a {
+      text-decoration: none;
       color: #252525; }
+
+.positioning-work {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  @media screen and (min-width: 750px) {
+    .positioning-work {
+      flex-direction: row; } }
 
 /*SVG modification*/
 .mySvg {

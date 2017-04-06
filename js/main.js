@@ -40,4 +40,8 @@ $(function(){
                 $('.h1_work').fadeToggle('fast');
             }
     });
+    
+    $('#back-to-top').on('click', function(){
+        $('html, body').animate({scrollTop: 0});
+    })
 });

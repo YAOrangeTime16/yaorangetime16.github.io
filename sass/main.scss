@@ -3,7 +3,7 @@
 $gray-dark: #252525;
 $gray-light: #574f4f;
 $side-margin: 0.5rem;
-$font-s: 1.6rem;
+$font-s: 1.4rem;
 $font-m: 1.8rem;
 $font-l: 2.2rem;
 $font-ll: 2.8rem;
@@ -14,14 +14,18 @@ $tablet: 750px;
 $desktop: 1000px;
 $desktop-l: 1200px;
 $osans-c: 'Open Sans Condensed', sans-serif;
-$background-color: rgba(178, 148, 148, 0.95);
+$background-color: rgb(178, 148, 148);
 
-html, body, main, section, article, div {
+html, body, main, section, article{
     font-family: $osans-c;
     background-color: $gray-dark;
-    margin: 0;
     width: 100%;
     height: auto;
+}
+
+div {
+    margin: 0;
+    padding: 0;
 }
 
 p {
@@ -36,7 +40,6 @@ h1 {
 h2 {
   font-size: $font-m;
   font-weight: 300; 
-    margin: 0;
 }
 
 h3 {
@@ -60,13 +63,23 @@ li {
     list-style: none;
 }
 
+.text-centering {
+    text-align: center;
+}
+
+.bg-color-div {
+    background: $background-color;
+}
+
 .bg-image {
   width: 100%;
   height: 100vh;
   background-image: url(../images/main-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; 
+  background-position: center;
+    position: relative;
+    z-index: 2;
 }
 
 .menu {
@@ -75,6 +88,7 @@ li {
   flex-direction: column;
   position: absolute;
     bottom: 0rem;
+    z-index: 3;
 }
 
 .menu_list {
@@ -113,6 +127,30 @@ li {
     vertical-align: middle;
     justify-content: center;
 }
+
+.arrow-top {
+    text-align: right;
+    z-index: 0;
+    img {
+        position: fixed;
+        bottom: 2rem;
+        right: 1rem;
+        cursor: pointer;
+        transform: scale(0.8);
+    }
+    .page-top {
+        color:rgb(183, 123, 123);
+        position: fixed;
+        bottom: 3rem;
+        right: 1.2rem;
+        z-index: 1;
+        text-shadow: 0 0 3px white;
+        &:hover {
+            display: inline;
+        }
+        
+    }
+}
 /*========
    ABOUT
  ========*/
@@ -120,7 +158,6 @@ li {
     display: flex;
     flex-direction: column;
     @include min-screen($tablet){
-        flex-direction: row;
         width: 90%;
         margin: 0.5rem auto;
     }
@@ -128,7 +165,6 @@ li {
     font-family: $osans-c;
     font-weight: 300;
     h1 {
-        text-decoration: underline;
         color: beige;
     }
     
@@ -143,14 +179,25 @@ li {
     }
 }
 
+.about-desktop-layout{
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color;
+    @include min-screen($desktop){
+        flex-direction: row;
+    }
+}
 .flex_row_left, .flex_row_right {
     padding: 1rem;
-    width: auto;
+    background-color: $background-color;
     @include min-screen($tablet){
-        width: 50%;
         padding: 2rem;
     }
-    background-color: $background-color;
+    @include min-screen($desktop){
+     background-color: transparent;
+        width: 50%;
+    }
+    
     ul {
         margin-top: 1rem;
     }
@@ -183,7 +230,6 @@ li {
     background-color: $background-color;
     h2{
         padding-left: 1rem;
-        text-decoration: underline;
     }
     .edu{
         color: beige;
@@ -192,7 +238,12 @@ li {
         background-color: $background-color;
     }
 }
-
+.ul-cv {
+    padding-left: 1rem;
+    @include min-screen ($desktop){
+            padding-left: 5rem;
+        }
+}
 .li-flex{
     display: inline-flex;
     flex-direction: column;
@@ -223,19 +274,58 @@ li {
 
 // PROJECTS AT SCHOOL
 #popinWork {
+    display: flex;
+    flex-direction: column;
     background-color: $background-color;
+    
+    @include min-screen($tablet){
+        width: 90%;
+        margin: 0.5rem auto;
+    }
     .title{
         color: white;
         text-align: left;
-        margin-top: 1rem;
-        @include min-screen($tablet){
-            margin-left: 10rem;
+        padding-top: 1rem;
+        width: 100%;
+        h3 {
+            padding-left: 2rem;
         }
         li{
-            list-style: circle;
+            padding-left: 1rem;
+            list-style: none;
+            color: $gray-dark;
+            font-size: $font-s;
+            line-height: $font-s + 1;
+            
+            li{
+                list-style: none;
+                &:after {
+                content: "";
+                display: block;
+                width: 0;
+                transition: width 0.7s;
+                border-bottom: 3px solid rgba(245, 245, 220, 0.5);
+                }
+                &:hover:after {
+                width: 80%;
+                }
+            }
+        }
+        
+        a{
+            text-decoration: none;
             color: $gray-dark;
         }
     }
+}
+
+.positioning-work {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @include min-screen ($tablet){
+            flex-direction: row;
+        }
 }
 
 /*SVG modification*/
