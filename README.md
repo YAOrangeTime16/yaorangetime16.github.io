@@ -17,6 +17,10 @@ Code: https://github.com/YAOrangeTime16/ajax
 Live: https://yaorangetime16.github.io/ajax/  
 
 ### HTML / CSS
-* Plantify
-* Plantify - Responsive
+* Responsive website - plantyfy
 
+### CMS PHP MYSQL
+
+### Portofolio
+* Portofolio (still on working)  
+https://yaorangetime16.github.io/
