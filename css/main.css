@@ -1,268 +1,58 @@
-html, body, main, section, article {
-  font-family: "Open Sans Condensed", sans-serif;
-  background-color: #252525;
-  width: 100%;
-  height: auto; }
-
-div {
+@font-face {
+  font-family: 'arbonnie';
+  src: url("../font/ARBONNIE.ttf") format("truetype"); }
+html, body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  width: 100%; }
+
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+nav ul a,
+nav .brand-logo {
+  color: #ffffff; }
 
 p {
-  margin: 0; }
+  line-height: 2rem; }
 
-h1 {
-  font-weight: 400;
-  font-size: 2.2rem; }
+.button-collapse {
+  color: #26a69a; }
 
-h2 {
-  font-size: 1.8rem;
-  font-weight: 300; }
+.title-font-size {
+  font-size: 2rem; }
 
-h3 {
-  font-size: 1.4rem;
-  font-weight: 100; }
+.bonnie-font {
+  font-family: "arbonnie"; }
 
-.line-h {
-  line-height: 27rem; }
-
-.font_dark {
-  color: #252525; }
-
-ul {
-  font-size: 1.8rem; }
-
-li {
-  list-style: none; }
-
-.text-centering {
-  text-align: center; }
-
-.bg-color-div {
-  background: #b29494; }
-
-.bg-image {
-  width: 100%;
-  height: 100vh;
-  background-image: url(../images/main-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.mylogo {
   position: relative;
-  z-index: 2; }
+  top: 8rem; }
 
-.menu {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 0rem;
-  z-index: 3; }
+.my-header {
+  height: 700px; }
 
-.menu_list {
-  list-style: none; }
+@media only screen and (max-width: 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%; }
 
-.linkmenu {
-  display: inline-block;
-  width: 50%;
-  padding: 0 1rem 0.5rem 0.5rem;
-  margin: 0;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.4rem;
-  font-weight: 200; }
+  #index-banner .section {
+    top: 10%; } }
+@media only screen and (max-width: 600px) {
+  #index-banner .section {
+    top: 0; } }
+.left-align li p {
+  margin: 0 auto; }
 
-.menu_list:after {
-  content: "";
-  display: block;
-  width: 0;
-  transition: width 0.7s;
-  /* border or (height & background) etc. */
-  border-bottom: 1px solid beige;
-  /* margin: 0 auto; */
-  /* left to right -> middle out */ }
+.edu p {
+  color: #2c63a3; }
 
-.menu_list:hover:after {
-  width: 120%; }
-
-.box {
-  height: 100vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  vertical-align: middle;
-  justify-content: center; }
-
-.arrow-top {
-  text-align: right;
-  z-index: 0; }
-  .arrow-top img {
-    position: fixed;
-    bottom: 2rem;
-    right: 1rem;
-    cursor: pointer;
-    transform: scale(0.8); }
-  .arrow-top .page-top {
-    color: #b77b7b;
-    position: fixed;
-    bottom: 3rem;
-    right: 1.2rem;
-    z-index: 1;
-    text-shadow: 0 0 3px white; }
-    .arrow-top .page-top:hover {
-      display: inline; }
-
-/*========
-   ABOUT
- ========*/
-#popinAbout {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: 300; }
-  @media screen and (min-width: 750px) {
-    #popinAbout {
-      width: 90%;
-      margin: 0.5rem auto; } }
-  #popinAbout h1 {
-    color: beige; }
-  #popinAbout h2 {
-    display: inline-block;
-    color: beige; }
-  #popinAbout li {
-    font-size: 1.4rem;
-    line-height: 2.7rem; }
-
-.about-desktop-layout {
-  display: flex;
-  flex-direction: column;
-  background-color: #b29494; }
-  @media screen and (min-width: 1000px) {
-    .about-desktop-layout {
-      flex-direction: row; } }
-
-.flex_row_left, .flex_row_right {
-  padding: 1rem;
-  background-color: #b29494; }
-  @media screen and (min-width: 750px) {
-    .flex_row_left, .flex_row_right {
-      padding: 2rem; } }
-  @media screen and (min-width: 1000px) {
-    .flex_row_left, .flex_row_right {
-      background-color: transparent;
-      width: 50%; } }
-  .flex_row_left ul, .flex_row_right ul {
-    margin-top: 1rem; }
-
-.h1_who, .h1_cv, .h1_work {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  color: beige;
-  margin: auto;
-  cursor: pointer; }
-
-.h1_who:hover, .h1_cv:hover, .h1_work:hover {
-  text-shadow: 1px 1px 7px #b29494; }
-
-#popinCV {
-  font-family: "Open Sans Condensed", sans-serif;
-  text-align: left;
-  font-weight: 200;
-  margin: auto;
-  height: auto;
-  background-color: #b29494; }
-  @media screen and (min-width: 1000px) {
-    #popinCV {
-      width: 90%;
-      margin: 0.5rem auto; } }
-  #popinCV h2 {
-    padding-left: 1rem; }
-  #popinCV .edu {
-    color: beige; }
-  #popinCV .experience {
-    background-color: #b29494; }
-
-.ul-cv {
-  padding-left: 1rem; }
-  @media screen and (min-width: 1000px) {
-    .ul-cv {
-      padding-left: 5rem; } }
-
-.li-flex {
-  display: inline-flex;
-  flex-direction: column;
-  width: 100%;
+footer.page-footer {
   margin: 0; }
-  @media screen and (min-width: 1000px) {
-    .li-flex {
-      flex-direction: row;
-      line-height: 3rem; } }
-  .li-flex .li-align {
-    display: block;
-    position: inherit;
-    margin-bottom: 1rem;
-    font-size: 1.4rem; }
-    @media screen and (min-width: 1000px) {
-      .li-flex .li-align {
-        position: absolute;
-        left: 23rem; } }
-  .li-flex p {
-    padding-left: 1rem;
-    margin-bottom: 0; }
-    @media screen and (min-width: 1000px) {
-      .li-flex p {
-        padding-left: 3rem; } }
-
-#popinWork {
-  display: flex;
-  flex-direction: column;
-  background-color: #b29494; }
-  @media screen and (min-width: 750px) {
-    #popinWork {
-      width: 90%;
-      margin: 0.5rem auto; } }
-  #popinWork .title {
-    color: white;
-    text-align: left;
-    padding-top: 1rem;
-    width: 100%; }
-    #popinWork .title h3 {
-      padding-left: 2rem; }
-    #popinWork .title li {
-      padding-left: 1rem;
-      list-style: none;
-      color: #252525;
-      font-size: 1.4rem;
-      line-height: 2.4rem; }
-      #popinWork .title li li {
-        list-style: none; }
-        #popinWork .title li li:after {
-          content: "";
-          display: block;
-          width: 0;
-          transition: width 0.7s;
-          border-bottom: 3px solid rgba(245, 245, 220, 0.5); }
-        #popinWork .title li li:hover:after {
-          width: 80%; }
-    #popinWork .title a {
-      text-decoration: none;
-      color: #252525; }
-
-.positioning-work {
-  display: flex;
-  flex-direction: column;
-  width: 100%; }
-  @media screen and (min-width: 750px) {
-    .positioning-work {
-      flex-direction: row; } }
-
-/*SVG modification*/
-.mySvg {
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  top: 7rem; }
 
 /*# sourceMappingURL=main.css.map */

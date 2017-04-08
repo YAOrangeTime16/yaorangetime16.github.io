@@ -1,55 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-<!--Responsive-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio: Yoko Andrae</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-<!--Import Google Font-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-<!--jQuery-->
-    <script src="js/jquery.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Portofolio: Yoko Andrae</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-    <header id="top">
-    <div class="bg-image relative">
-        <embed src="images/logo.svg" class="mySvg">
+    
+  <nav class="blue darken-4" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="bonnie-font title-font-size">Yoko's Portofolio</a>
+      <ul class="right hide-on-med-and-down  white-text bonnie-font">
+        <li><a href="#about">About</a></li>
+        <li><a href="#background">Background</a></li>
+        <li><a href="#code">My Codes</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#background">Background</a></li>
+        <li><a href="#code">My Codes</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
-    <nav>
-        <ul class="menu">
-            <li id="aboutMe" class="menu_list"><a class="linkmenu about" href="#about">ABOUT</a></li>
-            <li class="menu_list"><a class="linkmenu cv" href="#cv">BACKGROUND</a></li>
-            <li class="menu_list"><a class="linkmenu work" href="#work">CODES</a></li>
-        </ul>
-    </nav>
-    </header>
-    <main>
-        <section>
-        <!-- ABOUT ME -->
-            <article class="box" id="about">
-                <h1 class="h1_who line-h">About Me</h1>
-                <div id="popinAbout"></div>
-            </article>
-        <!-- BACKGROUND -->
-            <article class="box" id="cv">
-                <h1 class="h1_cv line-h">Careers &amp; Educations</h1>
-                <div id="popinCV"></div>
-            </article>
-        <!--- SCHOOL PROJECTS -->
-            <article class="box" id="work">
-                <h1 class="h1_work line-h">School Assignments</h1>
-                <div id="popinWork"></div>
-            </article>
-        </section>
-<div class="arrow-top" id="back-to-top">
-    <p class="page-top">Page Top</p>
-    <img src="images/top.png" alt="back to top">
+  </nav>
+
+  <div id="index-banner" class="parallax-container my-header">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <div class="row right">
+            <embed src="img/logo.svg" class="header col s12 light mylogo">      
+        </div>
+        <br><br>
+      </div>
+    </div>
+      <div class="parallax"><img src="img/header-background.jpg" alt="yoko's header image"></div>
 </div>
-    </main>
-    <footer>
-    </footer>
-    <script type="text/javascript" src="js/main.js"></script>
-</body>    
+    
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div id="about" class="col s12 m8">
+            <h4 class="bonnie-font">About Me</h4>
+            <ul>
+                        <li><p>Hi, my name is Yoko Andrae</p><p class="light">Born in Japan in 1976. Married with two children and a Swedish husband.</p></li>
+                        <li><p>How am I?</p><p class="light">I am passionate about what I do, and work hard for it, otherwise, I'd say, I have a sense of responsibility, and I'm thoughtful and moderate. I think it is exciting to solve some problems and that is why I enjoy programming very much. It was honestly big challenges for me to move to Sweden, learn new language, and decid to change careers from administrator to a web developer for my age, but I really enjoy everything what is happening to me and very excited about the new career and my future.</p></li>
+                        <li><p>What I like to do</p><p class="light">I love doing something for my kids. I began chrochetting when I was expecting my first baby, and now I make small toys for them. It is my best time to spend private time with my family and do some avtivities. I like also skiing, hiking and trekking. And what I most loved to do in Japan was to take a bath at "Onsen"s after such activities. I probably love to place myself to nature and fresh air! </p></li>
+                        <li><p>Programming &amp; Computer skills</p><p class="light">JavaScript / HTML5 / CSS3 (Sass) / GitHub / Adobe Iillustrator &amp; Photoshop / Bootstrap / jQuery</p></li>
+                        <li><p>Language</p><p class="light">Business level in Swedish and English / native in Japanese</p></li>
+                    </ul>
+        </div>
+
+        <div class="col s12 m4">
+            <img class="responsive-img" src="img/withmydaughter.JPG" alt="in kyoto">
+            <img class="responsive-img" src="img/kyoto.jpg" alt="kyoto photo">
+            <img class="responsive-img" src="img/chrochet.jpg" alt="chrochet">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="white-text header col s12 m12 light">I am excited about starting my mew career life as front end developer</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/railway.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div id="background" class="col s12 center">
+          
+          <h4  class="bonnie-font">Career and Educational Background</h4>
+          <ul class="left-align">
+                        <li class="edu"><p class="col s12 m2">2016-Present</p><p class="light col s12 m10">Front End Developer Course at Nackademin</p></li>
+                        <li><p class="col s12 m2">2012-2014</p><p class="light col s12 m10">Sales Assistant / Customer Support (part-time)</p></li>
+                        <li class="edu"><p class="col s12 m2">2009</p><p class="light col s12 m10">Moved to Sweden</p></li>
+                        <li><p class="col s12 m2">2006-2009</p><p class="light col s12 m10">Administrator / Admin Team Leader</p></li>
+                        <li><P class="col s12 m2">2002-2005</P><p class="light col s12 m10">Sales &amp; Promotion Assistant / DTP operator</p></li>
+                        <li class="edu"><p class="col s12 m2">2001-2002</p><p class="light col s12 m10">Marketing Course at the Salford University (UK)</p></li>
+                        <li><p class="col s12 m2">2000-2001</p><p class="light col s12 m10">Sales &amp; Promotion Support</p></li>
+                        <li class="edu"><p class="col s12 m2">1996-2000</p><p class="light col s12 m10">Aoyama Gakuin University</p></li>
+            </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light black-text">It was a challenge for me to move to Sweden and change my careers</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/school.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer blue darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text"><a href="https://github.com/YAOrangeTime16/yaorangetime16.github.io" class="white-text bonnie-font">My GitHub Repo</a></h5>
+          <p class="grey-text text-lighten-4">As I am using and saving my codes of school assignments to GitHub, here is the link to my repository.</p>
+
+
+        </div>
+        <div id="code" class="col l3 s12">
+          <h5 class="white-text bonnie-font">Codes</h5>
+          <ul>
+            <li><a class="white-text light" href="https://github.com/YAOrangeTime16/busfare">BusFare (JavaScript 1)</a></li>
+            <li><a class="white-text light" href="https://github.com/YAOrangeTime16/todo">To-Do list (JavaScript 1)</a></li>
+            <li><a class="white-text light" href="https://github.com/YAOrangeTime16/foodie">Foodie (JavaScript 1)</a></li>
+              <li><a class="white-text light" href="https://github.com/YAOrangeTime16/designpattern">Design Pattern (JavaScript 2)</a></li>
+            <li><a class="white-text light" href="https://github.com/YAOrangeTime16/ajax">Ajax Rest API (JavaScript 2)</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text bonnie-font">Live Sites</h5>
+          <ul>
+            <li><a class="gray-text light">BusFare (JavaScript 1)</a></li>
+            <li><a class="white-text light" href="#!">To-Do list (JavaScript 1)</a></li>
+            <li><a class="white-text light" href="#!">Foodie (JavaScript 1)</a></li>
+            <li><a class="white-text light" href="https://yaorangetime16.github.io/designpattern/">Design Pattern (JavaScript 2)</a></li>
+            <li><a class="white-text light" href="https://yaorangetime16.github.io/ajax/">Ajax Rest API (JavaScript 2)</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Original Source from <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
 </html>
