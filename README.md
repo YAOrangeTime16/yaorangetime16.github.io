@@ -24,3 +24,6 @@ Live: https://yaorangetime16.github.io/ajax/
 ### Portofolio
 * Portofolio  
 https://yaorangetime16.github.io/
+
+
+LinkedIn: [Yoko Andrae](https://www.linkedin.com/in/yoko-andrae-7323a0118/)
