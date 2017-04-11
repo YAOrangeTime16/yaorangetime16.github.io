@@ -1,12 +1,8 @@
 # Nackademin / Front-end 2016 / Yoko Andrae
 
-### Javascript 1
-* Bus Fare  
-Code: https://github.com/YAOrangeTime16/busfare
-* To-do list  
-Code: https://github.com/YAOrangeTime16/todo
-* Foodie  
-Code: https://github.com/YAOrangeTime16/foodie
+### Portfolio
+* Portoflio  
+https://yaorangetime16.github.io/
 
 ### Javascript 2
 * Design Pattern (Movie Database)  
@@ -16,14 +12,18 @@ Live: https://yaorangetime16.github.io/designpattern/
 Code: https://github.com/YAOrangeTime16/ajax  
 Live: https://yaorangetime16.github.io/ajax/  
 
+### Javascript 1
+* Bus Fare  
+Code: https://github.com/YAOrangeTime16/busfare
+* To-do list  
+Code: https://github.com/YAOrangeTime16/todo
+* Foodie  
+Code: https://github.com/YAOrangeTime16/foodie
+
 ### HTML / CSS
 * Responsive website - plantyfy
 
 ### CMS PHP MYSQL
-
-### Portofolio
-* Portofolio  
-https://yaorangetime16.github.io/
 
 
 LinkedIn: [Yoko Andrae](https://www.linkedin.com/in/yoko-andrae-7323a0118/)

@@ -24,10 +24,13 @@ p {
   color: #26a69a; }
 
 .title-font-size {
-  font-size: 2rem; }
+  font-size: 2.5rem; }
 
 .bonnie-font {
   font-family: "arbonnie"; }
+
+.menu-font-size {
+  font-size: 1.5rem; }
 
 .mylogo {
   position: relative;
@@ -35,6 +38,10 @@ p {
 
 .my-header {
   height: 700px; }
+
+.code-link {
+  padding-left: 8px;
+  text-decoration: underline; }
 
 @media only screen and (max-width: 992px) {
   .parallax-container .section {
