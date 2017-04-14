@@ -1,7 +1,7 @@
 # Nackademin / Front-end 2016 / Yoko Andrae
 
 ### Portfolio
-* Portoflio  
+* Portflio  
 https://yaorangetime16.github.io/
 
 ### Javascript 2
@@ -21,7 +21,9 @@ Code: https://github.com/YAOrangeTime16/todo
 Code: https://github.com/YAOrangeTime16/foodie
 
 ### HTML / CSS
-* Responsive website - plantyfy
+* Responsive website - plantyfy  
+Code: https://github.com/YAOrangeTime16/html_css  
+WebSite: yaorangetime16.github.io/html_css
 
 ### CMS PHP MYSQL
 
