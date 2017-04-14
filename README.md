@@ -23,7 +23,7 @@ Code: https://github.com/YAOrangeTime16/foodie
 ### HTML / CSS
 * Responsive website - plantyfy  
 Code: https://github.com/YAOrangeTime16/html_css  
-WebSite: yaorangetime16.github.io/html_css
+WebSite: https://yaorangetime16.github.io/html_css
 
 ### CMS PHP MYSQL
 
