@@ -4,6 +4,6 @@ css/*.css.map
 node_modules/
 parallax-template/
 package.json
-img/*ai
-*psd
+img/*.ai
+*.psd
 temp/

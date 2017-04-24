@@ -1,4 +1,5 @@
 @import 'font';
+@import 'variables';
 
 html, body {
     margin: 0;
@@ -24,7 +25,7 @@ p {
 }
 
 .button-collapse {
-  color: #26a69a;
+  color: $limegreen;
 }
 
 .title-font-size{
@@ -39,10 +40,11 @@ p {
 }
 .mylogo {
     position: relative;
-    top: 8rem;
+    top: 6rem;
 }
+
 .my-header {
-    height: 700px;
+    height: 600px;
 }
 
 .code-link {
@@ -70,7 +72,7 @@ p {
     margin: 0 auto;
 }
 .edu p {
-    color: #2c63a3
+    color: $light-grey;
 }
 
 footer.page-footer {

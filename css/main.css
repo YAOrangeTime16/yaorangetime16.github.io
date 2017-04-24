@@ -34,10 +34,10 @@ p {
 
 .mylogo {
   position: relative;
-  top: 8rem; }
+  top: 6rem; }
 
 .my-header {
-  height: 700px; }
+  height: 600px; }
 
 .code-link {
   padding-left: 8px;
@@ -57,7 +57,7 @@ p {
   margin: 0 auto; }
 
 .edu p {
-  color: #2c63a3; }
+  color: #818181; }
 
 footer.page-footer {
   margin: 0; }
