@@ -2,10 +2,39 @@
   font-family: 'arbonnie';
   src: url("../font/ARBONNIE.ttf") format("truetype"); }
 
-.jp-text {
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl; }
+.btn-align {
+  display: flex;
+  flex-direction: row; }
+
+.circle-btn {
+  height: 3rem;
+  border-radius: 10px;
+  border: 1px solid #26a69a;
+  text-align: center; }
+
+.code-link {
+  padding: 0.5rem 1rem;
+  color: #26a69a; }
+
+.circle-btn:hover {
+  transition: all 0.3s ease-in-out;
+  background: rgba(38, 166, 154, 0.2); }
+
+.middle-btn {
+  margin-bottom: 2rem; }
+
+.btn-oneline {
+  position: relative;
+  top: 4.5rem; }
+  .btn-oneline a {
+    position: relative;
+    bottom: 4.5rem; }
+
+@media screen and (max-width: 700px) {
+  .btn-oneline {
+    top: 0; }
+    .btn-oneline a {
+      bottom: 0; } }
 
 html, body {
   margin: 0;
@@ -25,6 +54,9 @@ nav .brand-logo {
 
 p {
   line-height: 2rem; }
+
+.type-writer1, type-writer2, type-writer3 {
+  visibility: hidden; }
 
 .button-collapse {
   color: #26a69a; }
@@ -49,16 +81,9 @@ p {
   margin-left: 1rem; }
 
 #js-lists > li {
-  line-height: 3rem; }
-
-.code-link {
-  padding-left: 2rem;
-  color: #26a69a; }
-
-.code-link:hover {
-  transition: all 0.3s ease-in-out;
-  color: #263aa6;
-  text-decoration: underline; }
+  line-height: 3rem;
+  margin-top: 0.3rem;
+  padding-left: 0; }
 
 .middle-div {
   border-top: 0.3px solid #26a69a;
@@ -67,10 +92,23 @@ p {
 .l-height {
   line-height: 12rem; }
 
+.align {
+  text-align: left; }
+
+@media screen and (max-width: 700px) {
+  .l-height {
+    line-height: 4rem; }
+  .align {
+    text-align: center; } }
+
 .d-height {
-  height: 12rem; }
-  .d-height ul {
-    line-height: 12rem; }
+  line-height: 12rem; }
+
+@media screen and (max-width: 700px) {
+  .d-height {
+    height: auto; }
+    .d-height ul {
+      line-height: 3rem; } }
 
 @media only screen and (max-width: 992px) {
   .parallax-container .section {
@@ -79,7 +117,7 @@ p {
   #index-banner .section {
     top: 10%; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #index-banner .section {
     top: 0; } }
 

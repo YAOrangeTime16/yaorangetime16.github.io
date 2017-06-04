@@ -1,8 +1,7 @@
 @import 'components/font';
 @import 'components/variables';
 @import 'components/mixin';
-@import 'components/jptext';
-
+@import 'components/button';
 html, body {
     margin: 0;
     padding: 0;
@@ -25,7 +24,9 @@ nav .brand-logo {
 p {
   line-height: 2rem;
 }
-
+.type-writer1, type-writer2, type-writer3 {
+    visibility: hidden;
+}
 .button-collapse {
   color: $limegreen;
 }
@@ -55,17 +56,8 @@ p {
 
 #js-lists > li{
     line-height: 3rem;
-}
-
-.code-link {
-    padding-left: 2rem;
-    color: rgb(38, 166, 154);
-}
-
-.code-link:hover {
-    transition: all 0.3s ease-in-out;
-    color: rgb(38, 58, 166);
-    text-decoration: underline;
+    margin-top: 0.3rem;
+    padding-left: 0;
 }
 
 .middle-div {
@@ -76,10 +68,32 @@ p {
 .l-height {
     line-height: 12rem;
 }
-.d-height{
-    height: 12rem;
-    ul {
-        line-height: 12rem;
+
+.align {
+    text-align: left;
+}
+
+@include max-screen($mobile){
+    .l-height {
+        line-height: 4rem;
+    }
+    
+    .align {
+        text-align:center;
+    }
+}
+
+.d-height {
+    line-height: 12rem;
+}
+
+@include max-screen($mobile){
+    .d-height{
+        height: auto;
+        
+        ul {
+            line-height: 3rem;
+        }
     }
 }
 @media only screen and (max-width : 992px) {
@@ -92,7 +106,7 @@ p {
   }
 }
 
-@include max-screen(600px) {
+@include max-screen($mobile) {
   #index-banner .section {
     top: 0;
   }
