@@ -49,11 +49,39 @@ p {
     height: 600px;
 }
 
+#js-lists{
+    margin-left: 1rem;
+}
+
+#js-lists > li{
+    line-height: 3rem;
+}
+
 .code-link {
-    padding-left: 8px;
+    padding-left: 2rem;
+    color: rgb(38, 166, 154);
+}
+
+.code-link:hover {
+    transition: all 0.3s ease-in-out;
+    color: rgb(38, 58, 166);
     text-decoration: underline;
 }
 
+.middle-div {
+    border-top: 0.3px solid $limegreen;
+    border-bottom: 0.3px solid $limegreen;
+}
+
+.l-height {
+    line-height: 12rem;
+}
+.d-height{
+    height: 12rem;
+    ul {
+        line-height: 12rem;
+    }
+}
 @media only screen and (max-width : 992px) {
   .parallax-container .section{
     position: absolute;
@@ -64,7 +92,7 @@ p {
   }
 }
 
-@media only screen and (max-width : 600px) {
+@include max-screen(600px) {
   #index-banner .section {
     top: 0;
   }
