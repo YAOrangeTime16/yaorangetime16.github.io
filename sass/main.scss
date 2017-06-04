@@ -1,5 +1,7 @@
-@import 'font';
-@import 'variables';
+@import 'components/font';
+@import 'components/variables';
+@import 'components/mixin';
+@import 'components/jptext';
 
 html, body {
     margin: 0;
