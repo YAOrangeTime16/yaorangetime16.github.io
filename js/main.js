@@ -29,9 +29,18 @@ $(function(){
                 delay: 1,
                 blink: 400
             });
-
         
     });
     
+    //materialize plugin -- ScrollFire
+    var options = [
+        {selector: '#jp', offset: 400, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+        {selector: '#en', offset: 350, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      }}
+    ];
+    Materialize.scrollFire(options);
     
 });

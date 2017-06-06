@@ -6,15 +6,24 @@
   display: flex;
   flex-direction: row; }
 
-.circle-btn {
+.circle-btn, .btn-oneline {
   height: 3rem;
   border-radius: 10px;
   border: 1px solid #26a69a;
   text-align: center; }
 
+.circle-btn {
+  margin: 0 1rem; }
+
+.btn-oneline {
+  width: 60%; }
+  .btn-oneline a {
+    color: #c9c9c9; }
+
 .code-link {
-  padding: 0.5rem 1rem;
-  color: #26a69a; }
+  color: #26a69a;
+  display: inline-block;
+  width: 100%; }
 
 .circle-btn:hover {
   transition: all 0.3s ease-in-out;
@@ -23,14 +32,7 @@
 .middle-btn {
   margin-bottom: 2rem; }
 
-.btn-oneline {
-  position: relative;
-  top: 4.5rem; }
-  .btn-oneline a {
-    position: relative;
-    bottom: 4.5rem; }
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 770px) {
   .btn-oneline {
     top: 0; }
     .btn-oneline a {
@@ -85,6 +87,15 @@ p {
   margin-top: 0.3rem;
   padding-left: 0; }
 
+#html-list, #php-list {
+  line-height: 3rem;
+  width: 100%; }
+  #html-list li:nth-child(1), #php-list li:nth-child(1) {
+    width: 100%; }
+  #html-list li:nth-child(2), #php-list li:nth-child(2) {
+    width: 93%;
+    margin-left: 0.7rem; }
+
 .middle-div {
   border-top: 0.3px solid #26a69a;
   border-bottom: 0.3px solid #26a69a; }
@@ -95,20 +106,18 @@ p {
 .align {
   text-align: left; }
 
-@media screen and (max-width: 700px) {
+.d-height {
+  height: 12rem; }
+
+@media screen and (max-width: 770px) {
   .l-height {
     line-height: 4rem; }
   .align {
     text-align: center; } }
 
-.d-height {
-  line-height: 12rem; }
-
-@media screen and (max-width: 700px) {
-  .d-height {
-    height: auto; }
-    .d-height ul {
-      line-height: 3rem; } }
+@media screen and (max-width: 770px) {
+  .d-height ul {
+    line-height: 3rem; } }
 
 @media only screen and (max-width: 992px) {
   .parallax-container .section {
@@ -117,7 +126,7 @@ p {
   #index-banner .section {
     top: 10%; } }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 770px) {
   #index-banner .section {
     top: 0; } }
 
@@ -129,3 +138,16 @@ p {
 
 footer.page-footer {
   margin: 0; }
+
+#jp, #en {
+  opacity: 0; }
+
+#jp {
+  padding-top: 2em;
+  writing-mode: vertical-rl;
+  font-weight: bold; }
+
+#en {
+  margin-top: 15em;
+  font-weight: 600;
+  color: #c1c1c1; }

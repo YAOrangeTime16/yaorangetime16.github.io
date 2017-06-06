@@ -60,6 +60,19 @@ p {
     padding-left: 0;
 }
 
+#html-list, #php-list {
+    line-height: 3rem;
+    width: 100%;
+    
+    li:nth-child(1) {
+        width: 100%;
+    }
+    li:nth-child(2){  //button
+        width: 93%;
+        margin-left: 0.7rem;
+    }
+}
+
 .middle-div {
     border-top: 0.3px solid $limegreen;
     border-bottom: 0.3px solid $limegreen;
@@ -73,6 +86,10 @@ p {
     text-align: left;
 }
 
+.d-height {
+    height: 12rem;
+}
+
 @include max-screen($mobile){
     .l-height {
         line-height: 4rem;
@@ -83,18 +100,10 @@ p {
     }
 }
 
-.d-height {
-    line-height: 12rem;
-}
-
 @include max-screen($mobile){
-    .d-height{
-        height: auto;
-        
-        ul {
+    .d-height ul {
             line-height: 3rem;
         }
-    }
 }
 @media only screen and (max-width : 992px) {
   .parallax-container .section{
@@ -121,4 +130,20 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+#jp, #en {
+    opacity: 0;
+}
+
+#jp {
+    padding-top: 2em;
+    writing-mode: vertical-rl;
+    font-weight: bold;
+}
+
+#en {
+    margin-top: 15em;
+    font-weight: 600;
+    color: #c1c1c1;
 }
