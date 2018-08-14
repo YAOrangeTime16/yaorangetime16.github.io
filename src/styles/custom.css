@@ -1,0 +1,36 @@
+.uk-badge {
+  background: #666666; }
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background: #ffffff; }
+
+.containerWidth {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.coverImg {
+  background-image: url("/images/sample32.jpg");
+  background-position: right;
+  height: 80vh; }
+
+.prfImg {
+  background-image: url("/images/prf1.jpg");
+  background-position: right;
+  height: 40vh; }
+
+.prfTitle {
+  margin-top: 6rem;
+  text-shadow: 2px 2px 3px #000000; }
+
+.footerHeight {
+  height: 20vh; }
+
+.labelColor-js {
+  background: #e79090; }
+
+.labelColor-style {
+  background: #a6b972; }
+
+.labelColor-tool {
+  background: #5c5c5c; }
