@@ -7,5 +7,6 @@ package.json
 img/*.ai
 *.psd
 temp/
-build/
+public/
+src/
 old/
