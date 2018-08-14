@@ -10,3 +10,4 @@ temp/
 public/
 src/
 old/
+.DS_Store
