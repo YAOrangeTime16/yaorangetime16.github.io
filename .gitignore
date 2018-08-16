@@ -1,6 +1,4 @@
 sass/
-static/css/*.css.map
-static/js/*.js.map
 node_modules/
 parallax-template/
 package.json
