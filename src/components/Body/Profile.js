@@ -17,17 +17,17 @@ const Profile = () => (
     <ProfileCover />
     <section>
       <h3>Who am I?</h3>
-      <p>I'm a frontend developer and also a mother of two girls.
-      Coming from Japan and living in Stockholm/Sweden now. I started my career as Administrator (customer support, office support) / DTP operator in Japan, and then decided to change careers towards IT.
+      <p>I'm a frontend developer and am married with two daughters and a swedish husband.
+      Moved from Japan to Stockholm/Sweden. Worked as Administrator (customer support, office support) / DTP operator in Japan, and now decided to change careers to IT.
       <br />
-      Here, I took a two-year "frontend development" education course at a Swedish Vocatilnal Education School (Nackademin Yrkeshögskola), and after my graduation in May 2018, am looking for an opportunity in Stockholm.
+      After a two-year "frontend development" education course at a Swedish Vocatilnal Education School (Nackademin Yrkeshögskola), and I am looking for an opportunity in Stockholm.
       <br />
-      I enjoy solving problems and love coding. 
+      <strong>I enjoy solving problems</strong> and <strong>love coding. </strong> 
       I am passionate about what I do, keen on what I am interested in, and work hard for it. I take on challenges to improve myself.
       </p>
       <h4>What am I doing?</h4>
       <p>
-      Keep learning... and am looking for a frontend development job (full-time, part-time, consultant or any). Looking at and testing frontend and JavaScript technologies that I haven't learnt yet, such as SPA, SSR, Node / Express, have also applied for a <a href="https://chingu.io/">Chingu cohorts</a> project to improve my skills.
+      Keep learning... and am looking for a frontend development job in Stockholm (full-time, part-time, consultant or any). Looking at and testing frontend and JavaScript technologies that I am interested in, such as SPA, SSR, Node / Express, have also applied for a <a href="https://chingu.io/">Chingu cohorts</a> project to improve my skills.
       </p>
       <h4>Educational Background</h4>
       <ul>
