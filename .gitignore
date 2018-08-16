@@ -1,13 +1,12 @@
-.sass-chache/
 sass/
-css/*.css.map
+static/css/*.css.map
+static/js/*.js.map
 node_modules/
 parallax-template/
 package.json
 img/*.ai
 *.psd
 temp/
-public/
-src/
-old/
+old-portfolio/
 .DS_Store
+portfolio/
