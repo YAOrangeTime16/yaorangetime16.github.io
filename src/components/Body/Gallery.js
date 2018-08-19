@@ -5,7 +5,7 @@ const Gallery = () => (
   <section id="projects" className="uk-flex uk-flex-wrap-between uk-grid-medium uk-child-width-expand@s uk-text-center uk-grid uk-margin-medium-top" uk-height-match="target: div > .uk-card" uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true">
       <Card
         appTitle="Salon App"
-        description="Applied styles based on a design, used react-router and react-loadable"
+        description="Applied styles based on a Sketch design, used react-router and react-loadable"
         codeUrl="https://github.com/YAOrangeTime16/skbv_arbetsprov"
         viewUrl="https://skbv-a03b9.firebaseapp.com/salon/salonprestige"
         badge={['react', 'router', 'loadable']} />

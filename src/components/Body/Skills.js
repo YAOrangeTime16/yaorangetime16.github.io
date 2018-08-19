@@ -25,6 +25,7 @@ const Skills = () => (
       <SkillCard skillName="WordPress"/>
       <SkillCard skillName="firebase" labelColor="tool"/>
       <SkillCard skillName="Git / GitHub" labelColor="tool"/>
+      <SkillCard skillName="npm" labelColor="tool"/>
       <SkillCard skillName="webpack" labelColor="tool"/>
       <SkillCard skillName="illustrator" labelColor="tool"/>
       <SkillCard skillName="photoshop" labelColor="tool"/>
