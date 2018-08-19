@@ -8,3 +8,4 @@ temp/
 old-portfolio/
 .DS_Store
 portfolio/
+service-worker.js
