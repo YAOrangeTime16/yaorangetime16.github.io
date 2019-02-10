@@ -4,11 +4,12 @@ Do not need to use gh-pages, but push directory local master branch to origin ma
 
 To update / Change in the code at `code`:
 
-`$ npm checkout code`
-`$ npm push origin code`
+`$ git checkout code`
+  
+`$ git push origin code`
 
-`$ npm checkout master`
+`$ git checkout master`
 
 `$ git fetch origin code && git merge origin/code`
 
-`$ npm push origin master`
+`$ git push origin master`
