@@ -5,7 +5,7 @@ const Gallery = () => (
   <section id="projects" className="uk-flex uk-flex-wrap-between uk-grid-medium uk-child-width-expand@s uk-text-center uk-grid uk-margin-medium-top" uk-height-match="target: div > .uk-card" uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true">
       <Card
         appTitle="Salon App"
-        description="Applied styles based on design (Sketch), used react-router and react-loadable"
+        description="Applied styles based on a Sketch design, used react-router and react-loadable"
         codeUrl="https://github.com/YAOrangeTime16/skbv_arbetsprov"
         viewUrl="https://skbv-a03b9.firebaseapp.com/salon/salonprestige"
         badge={['react', 'router', 'loadable']} />
@@ -35,7 +35,7 @@ const Gallery = () => (
         badge={['react', 'intersection observer']} />
       <Card
         appTitle="Card Games"
-        description="Written in vanillaJS, used Rest-ful API call"
+        description="Using Rest-ful API AJAX"
         codeUrl="https://github.com/YAOrangeTime16/ajax"
         viewUrl="https://yaorangetime16.github.io/ajax/"
         badge={['jQuery', 'ajax', 'api']} />
@@ -44,6 +44,12 @@ const Gallery = () => (
         description="Croup work at school. Code is written in PHP. I built 'Login/Register' with jQuery and PHP."
         codeUrl="https://github.com/YAOrangeTime16/php/tree/cloned"
         badge={['php', 'mysql', 'jquery']} />
+      <Card
+        appTitle="FCC Projects"
+        description="FreeCodeCamp projects"
+        codeUrl="https://github.com/YAOrangeTime16/my_fcc_projects"
+        viewUrl="https://yaorangetime16.github.io/my_fcc_projects/"
+        badge={['webpack', 'd3.js', 'sass']} />
   </section>
 )
 

@@ -8,7 +8,7 @@ const SkillCard = ({ skillName, labelColor }) => (
 
 const Skills = () => (
   <div id="skills">
-    <h3>Computer Languages (Experiences)</h3>
+    <h3>Skills (Experiences)</h3>
     <div className="uk-flex uk-text-center uk-flex-wrap uk-flex-center">
       <SkillCard skillName="JavaScript ES6/ES7" labelColor="js"/>
       <SkillCard skillName="React" labelColor="js"/>
@@ -25,6 +25,7 @@ const Skills = () => (
       <SkillCard skillName="WordPress"/>
       <SkillCard skillName="firebase" labelColor="tool"/>
       <SkillCard skillName="Git / GitHub" labelColor="tool"/>
+      <SkillCard skillName="npm" labelColor="tool"/>
       <SkillCard skillName="webpack" labelColor="tool"/>
       <SkillCard skillName="illustrator" labelColor="tool"/>
       <SkillCard skillName="photoshop" labelColor="tool"/>
