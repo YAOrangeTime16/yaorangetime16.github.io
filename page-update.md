@@ -5,7 +5,7 @@ Do not need to use gh-pages, but push directory local master branch to origin ma
 To update / Change in the code at `code`:
 
 `$ git checkout code`
-  
+
 `$ git push origin code`
 
 `$ git checkout master`
