@@ -1,13 +1,11 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
-
 # dependencies
-/node_modules
+node_modules/
 
 # testing
-/coverage
+coverage
 
-# production
-/build
+#code
+src/
 
 # misc
 .DS_Store
@@ -19,3 +17,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+sass/
+parallax-template/
+package.json
+temp/
+service-worker.js
