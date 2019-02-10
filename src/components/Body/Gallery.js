@@ -44,6 +44,12 @@ const Gallery = () => (
         description="Croup work at school. Code is written in PHP. I built 'Login/Register' with jQuery and PHP."
         codeUrl="https://github.com/YAOrangeTime16/php/tree/cloned"
         badge={['php', 'mysql', 'jquery']} />
+      <Card
+        appTitle="FCC Projects"
+        description="FreeCodeCamp projects"
+        codeUrl="https://github.com/YAOrangeTime16/my_fcc_projects"
+        viewUrl="https://yaorangetime16.github.io/my_fcc_projects/"
+        badge={['webpack', 'd3.js', 'sass']} />
   </section>
 )
 
